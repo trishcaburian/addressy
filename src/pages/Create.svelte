@@ -69,14 +69,14 @@
             <label class="field_label" for="firstname">
                 First Name
             </label>
-            <input type="text" class="regular_field" id="firstname" name="firstname" bind:value={firstname} required/>
+            <input type="text" class="regular_field" id="firstname" name="firstname" bind:value={firstname} placeholder="First Name" required/>
             <p id="fn_required" class="text-red-500 text-xs italic" hidden>Please fill out this field.</p>
         </div>
         <div class="w-full md:w-1/2 px-3">
             <label class="field_label" for="lastname">
                 Last Name
             </label>
-            <input type="text" class="regular_field" id="lastname" name="lastname" bind:value={lastname} required/>
+            <input type="text" class="regular_field" id="lastname" name="lastname" bind:value={lastname} placeholder="Last Name" required/>
             <p id="ln_required" class="text-red-500 text-xs italic" hidden>Please fill out this field.</p>
         </div>
     </div>
@@ -110,7 +110,7 @@
     <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full mb-3 px-3">
             <label class="field_label" for="phone">Phone Number</label>
-            <input class="regular_field" type="tel" id="phone" bind:value={phone} placeholder="Phone"/>
+            <input class="regular_field" type="tel" id="phone" bind:value={phone} placeholder="Phone Number"/>
         </div>
     </div>
     <button type="submit" class="form_button">Save</button>

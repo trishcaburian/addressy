@@ -11,6 +11,124 @@ export const people = writable([
             zip: '1321',
             country: 'country'
         },
-        phone: '123456789'
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'new',
+        lastname: 'person',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'new',
+        lastname: 'person',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'new',
+        lastname: 'person',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'new',
+        lastname: 'person',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'new',
+        lastname: 'person',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'cookiedawg',
+        lastname: '69',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'morningstar',
+        lastname: 'sinclair',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'computer',
+        lastname: 'jym',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
+    },
+    {
+        firstname: 'craig',
+        lastname: 'digsby',
+        address: {
+            address_1: '123 street',
+            city: 'city',
+            state: 'state',
+            zip: '1321',
+            country: 'country'
+        },
+        phone: '123456789',
+        person_img: ''
     }
 ]);

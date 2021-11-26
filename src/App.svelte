@@ -6,22 +6,22 @@
 	export let countries;
 
 	let menu = ['home', 'add'];
-	let selected = 'add';
+	let selected = 'home';
 
 	function getPage(page_name) {
 		selected = page_name;
 	}
 </script>
 
-<div class="relative min-h-screen left-0 flex">
+<div>
 	<!-- SIDEBAR -->
-	<div class="bg-gray-700 text-white w-72 p-3.5 space-y-4">
-		<span class="text-3xl">Address Book</span>
-		<nav class="space-y-2">
+	<nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 text-white">
+		<span class="font-bold text-xl">Address Book</span>
+		<div class="w-full block flex-grow px-4 sm:flex sm:items-center sm:w-auto">
 			<div class="sidebar" on:click={() => getPage('home')}> Home </div>
 			<div class="sidebar" on:click={() => getPage('add')}> Add </div>
-		</nav>
-	</div>
+		</div>
+	</nav>
 
 	<!-- CONTENT -->
 	<div class="p-5 flex justify-center flex-grow">
@@ -32,4 +32,3 @@
 		{/if}
 	</div>
 </div>
-
