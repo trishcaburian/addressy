@@ -1,5 +1,7 @@
 import { writable } from "svelte/store";
 
+export const modal = writable();
+export const was_updated = writable(false);
 export const people = writable([
     {
         firstname: 'default',

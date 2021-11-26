@@ -1,7 +1,8 @@
 <!-- Create a new contact -->
 <script>
-    import { people } from "../stores";
+    import { people, was_updated } from "../stores";
     export let countries;
+    export let page;
 
     let person;
     let firstname;
@@ -15,7 +16,7 @@
     let country;
 
     let uploaded;
-    let person_img;
+    let person_img = '';
 
     function addPerson() {
         person = {
@@ -37,7 +38,8 @@
             return people;
         })
 
-        console.log($people);
+        $was_updated = true;
+        page = 'home';
     }
 
     function uploadImg(e) {
