@@ -1,4 +1,5 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import Home from "./pages/Home.svelte";
 	import Create from "./pages/Create.svelte";
 
@@ -32,11 +33,17 @@
 		<div class="p-5 flex justify-center flex-grow">
 			<Modal show={$modal}>
 				{#if selected === 'home'}
-					<Home bind:page={selected} bind:selectedContact={selectedContact}/>
+					<div class="md:w-3/4 bg-white" in:fade>
+						<Home bind:page={selected} bind:selectedContact={selectedContact}/>
+					</div>
 				{:else if selected === 'add'}
-					<Create countries={countries} bind:page={selected}/>
+					<div class="w-full max-w-lg shadow-lg p-3.5 bg-white" in:fade>
+						<Create countries={countries} bind:page={selected}/>
+					</div>
 				{:else if selected === 'contact'}
-					<Contact bind:page={selected} selectedContact={selectedContact}/>
+					<div class="w-full max-w-lg shadow-lg p-3.5 bg-white" in:fade>
+						<Contact bind:page={selected} selectedContact={selectedContact}/>
+					</div>
 				{/if}
 			</Modal>
 		</div>

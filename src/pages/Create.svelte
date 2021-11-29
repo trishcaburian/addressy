@@ -52,7 +52,7 @@
     }
 </script>
 
-<form id="createPerson" class="w-full max-w-lg" on:submit|preventDefault={addPerson}>
+<form id="createPerson" on:submit|preventDefault={addPerson}>
     <!-- Maybe add an "Upload Photo" field? -->
     <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">

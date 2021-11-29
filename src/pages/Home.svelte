@@ -4,6 +4,7 @@
     import { onMount } from 'svelte';
     import { getContext } from 'svelte';
     import Popup from "./mods/Popup.svelte";
+
     export let page = 'home';
     export let selectedContact;
 
@@ -31,7 +32,7 @@
     });
 </script>
 
-<div class="md:w-3/4">
+<div>
     <div class="w-full sticky top-0 bg-white place-items-center">
         <div class="p-5">
             <input type="text" class="regular_field w-full" bind:value={search_text} placeholder="Search"/>
