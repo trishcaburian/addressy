@@ -2,7 +2,7 @@
 <script>
     import { people, was_updated } from "../stores";
     export let countries;
-    export let page;
+    export let page = 'add';
 
     let person;
     let firstname;

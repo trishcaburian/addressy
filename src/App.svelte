@@ -4,11 +4,13 @@
 
 	import Modal from "./pages/mods/Modal.svelte";
 	import { modal } from "./stores";
+	import Contact from "./pages/Contact.svelte";
 
 	export let countries;
 
 	let menu = ['home', 'add'];
 	let selected = 'home';
+	let selectedContact;
 
 	function getPage(page_name) {
 		selected = page_name;
@@ -30,9 +32,11 @@
 		<div class="p-5 flex justify-center flex-grow">
 			<Modal show={$modal}>
 				{#if selected === 'home'}
-					<Home/>
+					<Home bind:page={selected} bind:selectedContact={selectedContact}/>
 				{:else if selected === 'add'}
 					<Create countries={countries} bind:page={selected}/>
+				{:else if selected === 'contact'}
+					<Contact bind:page={selected} selectedContact={selectedContact}/>
 				{/if}
 			</Modal>
 		</div>

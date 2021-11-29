@@ -4,8 +4,11 @@
     import { onMount } from 'svelte';
     import { getContext } from 'svelte';
     import Popup from "./mods/Popup.svelte";
+    export let page = 'home';
+    export let selectedContact;
 
     let search_text = '';
+    let filteredPeople;
     $: filteredPeople = search_text ?
     $people.filter(person => {
         const first_name = person.firstname;
@@ -17,7 +20,7 @@
     const { open } = getContext('simple-modal');
 
     const showPopup = () => {
-        open(Popup, { message: "Succ" });
+        open(Popup, { message: "✅ Added new contact!" });
     };
 
     onMount(() => {
@@ -37,7 +40,10 @@
     <div class="mt-1">
         {#each filteredPeople as person}
             <hr class="w-full">
-            <div class="w-full block flex-grow px-4 sm:flex sm:items-center sm:w-auto">
+            <div class="w-full block flex-grow px-4 sm:flex sm:items-center sm:w-auto" on:click={() => {
+                    page = 'contact';
+                    selectedContact = person;
+                }}>
                 {#if person.person_img !== ''}
                     <img class="avatar_mini" src="{person.person_img}" alt="d" />
                 {:else}
